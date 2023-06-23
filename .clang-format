@@ -1,0 +1,27 @@
+# BasedOnStyle: Google
+IndentWidth: 4
+TabWidth: 4
+UseTab: Never
+AllowShortIfStatementsOnASingleLine: false
+AllowShortLoopsOnASingleLine: false
+AllowShortFunctionsOnASingleLine: false
+ColumnLimit: 100
+AccessModifierOffset: -4
+AlignConsecutiveAssignments: false
+AlignConsecutiveDeclarations: false
+AlignAfterOpenBracket: DontAlign
+AlignOperands: DontAlign
+IndentCaseLabels: true
+PointerAlignment: Left
+BreakBeforeBraces: Custom
+BraceWrapping:
+    AfterClass:      false
+    AfterControlStatement: false
+    AfterEnum:       false
+    AfterFunction:   true
+    AfterNamespace:  false
+    AfterStruct:     false
+    AfterUnion:      false
+    BeforeCatch:     false
+    BeforeElse:      false
+    IndentBraces:    false
