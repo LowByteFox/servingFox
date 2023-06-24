@@ -1,10 +1,12 @@
 #ifndef SERVER_HPP
 #define SERVER_HPP
 
+#include <atomic>
+
 class Server {
     private:
         int epollFd;
-        int epollCount;
+        std::atomic_int epollCount;
         int port;
         int maxConnections;
         void addEpollEvent(int fd);

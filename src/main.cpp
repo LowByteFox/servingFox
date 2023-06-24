@@ -1,11 +1,13 @@
 #include "config.h"
 #include "server/server.hpp"
 
+#include <map>
 #include <cstdio>
 #include <cstring>
 #include <fcntl.h>
 #include <sys/epoll.h>
 #include <thread>
+#include <trie.hpp>
 
 extern "C" {
 #include <crashtrace.h>
@@ -39,6 +41,7 @@ int main(int argc, char** argv)
         }
 
         for (int i = 0; i < numberOfEvents; i++) {
+            const epoll_event& event = events[i];
             // handle events
         }
     }
